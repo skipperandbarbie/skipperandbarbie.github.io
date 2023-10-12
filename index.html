@@ -25,32 +25,32 @@ Do you…
 
 (text-colour:#bac8ff)[[Enter the church]]
 (text-colour:#bac8ff)[[Walk around to look through the window]]
+(text-colour:#bac8ff)[[Go around to see if anyone is in the back]]
 
-</tw-passagedata><tw-passagedata pid="3" name="Looks to lead to a bustling city" tags="" position="700,100" size="100,100">You took the road to the city, and you were stopped by thieves along the way! They took your clothes, and(text-colour:#f03e3e)[ they left you for dead!]
+</tw-passagedata><tw-passagedata pid="3" name="Looks to lead to a bustling city" tags="" position="725,75" size="100,100">You took the road to the city, and you were stopped by thieves along the way! They took your clothes, and(text-colour:#f03e3e)[ they left you for dead!]
 
 What a sad way to go out… 
-</tw-passagedata><tw-passagedata pid="4" name="Is covered in the darkness of thick trees" tags="" position="450,100" size="100,100">You took the dark road and got lost in the (text-colour:#fa5252)[scary forest!]
+</tw-passagedata><tw-passagedata pid="4" name="Is covered in the darkness of thick trees" tags="" position="400,75" size="100,100">You took the dark road and got lost in the (text-colour:#fa5252)[scary forest!]
 
-You got cold in the middle of the night and started a fire, the light made the animals find you and you were eaten… 
+(after:2s)[You got cold in the middle of the night and started a fire...]
 
-Why on earth would you choose that road? 
+(after:4s)[The light made the animals find you and you were eaten… ]
+
+(after:8s)[Why on earth would you choose that road? ]
 </tw-passagedata><tw-passagedata pid="5" name="Enter the church" tags="" position="750,350" size="100,100">You enter the church and immediately spot a priest trying to fix a wooded pew that looks to be broken. When he notices you, he beckons you over to him. The priest explains that he doesn’t know how to fix the pew and he asks if you would be able to help him. 
 
 Do you… 
 
 (text-colour:#bac8ff)[[Help him]]
-(text-colour:#bac8ff)[[Decline and leave]]
-</tw-passagedata><tw-passagedata pid="6" name="Walk around to look through the window" tags="" position="425,350" size="100,100">You walk around the church to look through the many windows of the church. A priest spots you and yells at you to (text-colour:#fa5252)[“stay put!” ]
+(text-colour:#bac8ff)[[Decline and leave]]</tw-passagedata><tw-passagedata pid="6" name="Walk around to look through the window" tags="" position="350,425" size="100,100">You walk around the church to look through the many windows of the church. A priest spots you and yells at you to (text-colour:#fa5252)[“stay put!” ]
 
+(set:$send to &quot;you to prison where you will have to spend the rest of your life locked up&quot;)
 
-The priest has you arressted and you spend your life in prison... 
-
-
-all for sneaking?</tw-passagedata><tw-passagedata pid="7" name="Help him" tags="" position="950,300" size="100,100">You agree to help the priest on the condition that he will answer any questions that you have. The priest agrees to it, and you get to work on fixing the pew. 
+Oh no! He grabs you by the arms and brings you into the church, he states that since he caught you sneeking around, he&#39;s (text-colour:#bac8ff)[[going to...]] </tw-passagedata><tw-passagedata pid="7" name="Help him" tags="" position="950,300" size="100,100">You agree to help the priest on the condition that he will answer any questions that you have. The priest agrees to it, and you get to work on fixing the pew. 
 
 When you have fixed the pew, the priest tells you that you are standing in a Catholic church in time of the Tudors! 
 
-He informs you that the King, Henry VIII has gone //mad in the mind!// The priest, because you helped him, offers you a place to live on the condition that you become a priest. 
+He informs you that the King, Henry VIII has gone //mad in the mind!// The priest, because you helped him, offers you a place to live on the condition that you become a Catholic priest in order to prevent from Protastants from taking over! 
 
 Do you… 
 
@@ -58,11 +58,15 @@ Do you…
 (text-colour:#bac8ff)[[Decline]]
 
 &lt;a title=&quot;Joos van Cleve
-, Public domain, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:1491_Henry_VIII.jpg&quot;&gt;&lt;img width=&quot;256&quot; alt=&quot;1491 Henry VIII&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/1491_Henry_VIII.jpg/256px-1491_Henry_VIII.jpg&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="8" name="Decline and leave" tags="" position="725,500" size="100,100">Whoops!! you realize that you have nowehere to go. You walk back to the church but trip on a rock and fall down a hill... 
+, Public domain, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:1491_Henry_VIII.jpg&quot;&gt;&lt;img width=&quot;256&quot; alt=&quot;1491 Henry VIII&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/1491_Henry_VIII.jpg/256px-1491_Henry_VIII.jpg&quot;&gt;&lt;/a&gt;
 
-you die... 
+</tw-passagedata><tw-passagedata pid="8" name="Decline and leave" tags="" position="725,500" size="100,100">Whoops!! you realize that you have nowehere to go. You walk back to the church but trip on a rock and fall down a hill... 
 
-(text-colour:#f03e3e)[try being a little more nice! ]</tw-passagedata><tw-passagedata pid="9" name="Agree" tags="" position="1100,300" size="100,100">You agree and become a priest! You have found a home and have made many new friends since being at the church. You have learned how to fix things, how to make bread, and how to spread the word of the lord! 
+(after:4s)[As you fall down the hill, and you reach the bottom, you see a paper! the paper contains what looks to be information about the current going-ons about the Catholic church and the Protastant one! ]
+
+(set:$die to &quot;the rock you hit your head on is making you bleed out.&quot;)
+
+(after:8s)[Do you want to know (text-colour:#bac8ff)[[more about it?|Paper]] ]</tw-passagedata><tw-passagedata pid="9" name="Agree" tags="" position="1100,300" size="100,100">You agree and become a priest! You have found a home and have made many new friends since being at the church. You have learned how to fix things, how to make bread, and how to spread the word of the lord! 
 
 For doing do so well and for being so kind…
 
@@ -72,15 +76,17 @@ Skip forward to…
 
 </tw-passagedata><tw-passagedata pid="10" name="Decline" tags="" position="950,450" size="100,100">You still have nowhere to live. 
 
-You spend the night in the woods and get //eaten// by wolves. 
+(after:2s)[You spend the night in the woods and get //eaten// by wolves. ]
 
-Why would you do that? 
+(after:4s)[Why would you do that?] 
 
-The priest was being kind to you
+(after:6s)[The priest was being kind to you]
 
-Please learn how to be nicer! 
+(after:8s)[Please learn how to be nicer! ]
 
-Well, you can’t now. (text-colour:#f03e3e)[You died… ]
+(set:$die to &quot;the wolves are coming back to eat you...again.&quot;)
+
+(after:11s)[Oh wait! You can still breath! In the hint of the moonlight you notice a paper and use what is left of your arm to grab it. it looks to have information about the Catholic church and the Protestant one! If you&#39;re going to die, (text-colour:#bac8ff)[[might as well learn seomthing new right?|Paper]]]
 
 </tw-passagedata><tw-passagedata pid="11" name="July of 1540!" tags="" position="1250,450" size="100,100">The days are //hot//, and the King has become more crazed as time has gone on! 
 
@@ -132,28 +138,58 @@ Do you…
 (text-colour:#bac8ff)[[Say that you’re not even Catholic]]
 (text-colour:#bac8ff)[[Say that you’re not a priest and that your friend kidnapped you]]
 (text-colour:#bac8ff)[[Say nothing and stay loyal to your friend]]
-</tw-passagedata><tw-passagedata pid="18" name="Say that you’re not even Catholic" tags="" position="1400,825" size="100,100">Your friend looks at you with hurt, and the people in the crowd boo and call you a coward for lying.
+</tw-passagedata><tw-passagedata pid="18" name="Say that you’re not even Catholic" tags="" position="1425,825" size="100,100">You said that you were not Catholic and the whole crowd of people boo at you! You can&#39;t even stay true to your God in times of struggle? 
 
-(text-colour:#f03e3e)[You are hung while people boo at you… ]
+(after:4s)[Your friend looks at you with hurt...]
 
-</tw-passagedata><tw-passagedata pid="19" name="Say that you’re not a priest and that your friend kidnapped you" tags="" position="1825,825" size="100,100">Your friend, that one that //gave you a home// and a purpose in your forgetful life, //(text-colour:#f03e3e)[spits] //at your shoes and calls you a lying coward… 
+(after:6s)[The other priest looks disgusted with you...]
 
-You have no friends now...
+(after:8s)[And the crowd boos! ]
 
-And spit on your shoe...
+(after:10s)[(text-colour:#f03e3e)[You are hung while people boo at you… ]]
 
-You were hung regardless... 
-</tw-passagedata><tw-passagedata pid="20" name="Say nothing and stay loyal to your friend" tags="" position="1600,1000" size="100,100">You choose to say nothing, and instead, you give your friend a nod and a small, sad smile. 
+(set:$loyal to &quot;Catholic&quot;)
 
-You were still hung…
+(after:12s)[But! before you die, do you want to see what (text-colour:#bac8ff)[[your life]] could have looked like if you were loyal to your freind and had not denied being Catholic? ]</tw-passagedata><tw-passagedata pid="19" name="Say that you’re not a priest and that your friend kidnapped you" tags="" position="1775,825" size="100,100">Your friend, that one that //gave you a home// and a purpose in your forgetful life, //(text-colour:#f03e3e)[spits] //at your shoes and calls you a lying coward… 
 
-Though…
+(after:4s)[You have no friends now...]
 
-No one booed at you, called you a coward, and you stayed a loyal friend in the end… 
+(after:6s)[And spit on your shoe...]
 
-You lived a good, loyal, short life.
+(after:8s)[You were hung regardless... ]
+ 
+(set:$loyal to &quot;friend&quot;)
+ 
+ (after:10s)[Hold on! You&#39;re still breathing, would you like to see what (text-colour:#bac8ff) [[your life]]  could have looked like if you were loyal to your freind and had not said that you were kidnapped? ]
+</tw-passagedata><tw-passagedata pid="20" name="Say nothing and stay loyal to your friend" tags="" position="1600,925" size="100,100">You choose to say nothing, and instead, you give your friend a nod and a small, sad smile. 
 
-</tw-passagedata></tw-storydata>
+(after:4s)[You were still hung…]
+
+(after:8s)[Though…]
+
+(after:12s)[No one booed at you, called you a coward, and you stayed a loyal friend in the end… ]
+
+(after:16s)[You lived a good, loyal, short life.]
+
+</tw-passagedata><tw-passagedata pid="21" name="your life" tags="" position="1600,1075" size="100,100">If you had been a true and loyal $loyal, you would have died with dignity. Even if you had died, you would have still died with honor from not only your friend and the other priest, but from the crowd as well. You could have moved people. However, you were a (text-colour:#ff6b6b)[coward.] </tw-passagedata><tw-passagedata pid="22" name="Paper" tags="" position="900,675" size="100,100">The paper contains infmoration that sates that there is a religious reform that is currently sweeping across the nation! Catholics are being killed left and right and the Protestans are taking over the nation each day! 
+
+(after:8s)[How could you leave that poor old priest alone? ]
+
+(after:10s)[What if he was Catholic? ]
+
+(after:12s)[He could be dead by now! ]
+
+(after:14s)[Well, I guess you&#39;ll never know since you are about to die beacuse (text-colour:#ff6b6b)[$die]]
+
+(after:16s)[Dang, what a short life. At least you leanred something new!]</tw-passagedata><tw-passagedata pid="23" name="Go around to see if anyone is in the back" tags="" position="525,525" size="100,100">You walk along the back of the church to see if anyone is there. However, when you get to the back of the church, you notice that a man dressed in robes is pointing at you through the open back door of the church! (text-colour:#ff6b6b)[He shouts at you to follow] him. And, sadly, you have no other choice... oh man! 
+
+(set:$send to &quot; you to a farm where you will have to live the rest of your life cleaning out pig stalls!&quot;)
+
+Sicne he thinks that you are a criminal, he states that he is (text-colour:#bac8ff)[[going to...]]</tw-passagedata><tw-passagedata pid="24" name="going to..." tags="" position="350,625" size="100,100">send (text-colour:#ff6b6b)[$send] 
+
+(after:4s)[All for sneaking? ]
+
+(after:6s)[What a short, boring, life to live...]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
