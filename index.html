@@ -9,7 +9,9 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Mini Assignment 1 .</tw-noscript></noscript></tw-story>
-<tw-storydata name="Mini Assignment 1 " startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="00B111DA-1A72-4C5E-9C87-59ABAAB05023" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start " tags="" position="575,225" size="100,100">Hello there! You have woken up in a grass field. The sun is shining down on you, and your head hurts. When trying to rack your brain for an explanation, you realize that you have (text-style:&quot;italic&quot;)[no memory] of who you are or where you are! Oh no! you decide to walk into the forest, and you stumble upon three different dirt roads… 
+<tw-storydata name="Mini Assignment 1 " startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="00B111DA-1A72-4C5E-9C87-59ABAAB05023" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start " tags="" position="575,225" size="100,100">Hello there! You have woken up in a grass field. The sun is shining down on you, and your head hurts. When trying to rack your brain for an explanation, you realize that you have (text-style:&quot;italic&quot;)[no memory] of who you are or where you are! Oh no! you decide to walk into the forest, and you stumble upon three different dirt roads. 
+
+But before you choose which road looks best to you, what is your name? If you can even remember it... (input:bind $name1)
 
 Do you the take road that…
 
@@ -17,7 +19,7 @@ Do you the take road that…
 (text-colour:#bac8ff)[[Looks to lead to a bustling city]]
 (text-colour:#bac8ff)[[Is covered in the darkness of thick trees]] 
 
-&lt;a title=&quot;cassi saari, CC BY-SA 4.0 &amp;lt;https://creativecommons.org/licenses/by-sa/4.0&amp;gt;, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Nachusa_Grasslands_Spring_2016.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Nachusa Grasslands Spring 2016&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nachusa_Grasslands_Spring_2016.jpg/512px-Nachusa_Grasslands_Spring_2016.jpg&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="2" name="Has flowers along it" tags="" position="575,350" size="100,100">You chose the road with the flowers along it! As you walk along the path you cross little homes and farms, when you ask what the year is, a farmer tells you that it’s Spring of 1540! 
+&lt;a title=&quot;cassi saari, CC BY-SA 4.0 &amp;lt;https://creativecommons.org/licenses/by-sa/4.0&amp;gt;, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Nachusa_Grasslands_Spring_2016.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Nachusa Grasslands Spring 2016&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nachusa_Grasslands_Spring_2016.jpg/512px-Nachusa_Grasslands_Spring_2016.jpg&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="2" name="Has flowers along it" tags="" position="575,350" size="100,100">You, $name1, chose the road with the flowers along it! As you walk along the path you cross little homes and farms, when you ask what the year is, a farmer tells you that it’s Spring of 1540! 
 
 You thank the farmer and continue along the path until you reach a stone church that is surrounded by tall trees. 
 
@@ -27,34 +29,37 @@ Do you…
 (text-colour:#bac8ff)[[Walk around to look through the window]]
 (text-colour:#bac8ff)[[Go around to see if anyone is in the back]]
 
-</tw-passagedata><tw-passagedata pid="3" name="Looks to lead to a bustling city" tags="" position="725,75" size="100,100">You took the road to the city, and you were stopped by thieves along the way! They took your clothes, and(text-colour:#f03e3e)[ they left you for dead!]
+</tw-passagedata><tw-passagedata pid="3" name="Looks to lead to a bustling city" tags="" position="725,75" size="100,100">You take the road that sounds like it leads to city full of noise and people! But wait! as you walk down the road, you are stopped by a band of thieves! 
 
-What a sad way to go out… 
-</tw-passagedata><tw-passagedata pid="4" name="Is covered in the darkness of thick trees" tags="" position="400,75" size="100,100">You took the dark road and got lost in the (text-colour:#fa5252)[scary forest!]
+They circle you like animals and ask for your name... and since you do not want to give them your true name, you tell them that your name is (dropdown:bind $fake1, &quot;Road&quot;, &quot;Tree&quot;, &quot;Path&quot;)
 
-(after:2s)[You got cold in the middle of the night and started a fire...]
+(text-colour:#bac8ff)[[The thives then...]] </tw-passagedata><tw-passagedata pid="4" name="Is covered in the darkness of thick trees" tags="" position="400,75" size="100,100">You took the dark road and got lost in the (text-colour:#fa5252)[scary forest!]
 
-(after:4s)[The light made the animals find you and you were eaten… ]
+You got cold in the middle of the night and started a fire. As you were sitting by the fire, you noticed a small puppy covered in fluffy hair. They sit right next to you by the fire. You have a little friend now! 
 
-(after:8s)[Why on earth would you choose that road? ]
-</tw-passagedata><tw-passagedata pid="5" name="Enter the church" tags="" position="750,350" size="100,100">You enter the church and immediately spot a priest trying to fix a wooded pew that looks to be broken. When he notices you, he beckons you over to him. The priest explains that he doesn’t know how to fix the pew and he asks if you would be able to help him. 
+The puppy needs a name though... what will you choose? (dropdown:bind $pup, &quot;Fluffy&quot;, &quot;Puppy&quot;, &quot;Forest&quot;, &quot;Woods&quot;, &quot;Fire&quot;)
+
+(text-colour:#bac8ff)[[They have a name!]]</tw-passagedata><tw-passagedata pid="5" name="Enter the church" tags="" position="750,350" size="100,100">You,$name1, enter the church and immediately spot a priest trying to fix a wooded pew that looks to be broken. When he notices you, he beckons you over to him. The priest explains that he doesn’t know how to fix the pew and he asks if you would be able to help him. 
+
+He states that his name is (dropdown:bind $name2, &quot;Thomas&quot;, &quot;Henry&quot;, &quot;Franklin&quot;, &quot;Phillip&quot;)
 
 Do you… 
 
 (text-colour:#bac8ff)[[Help him]]
-(text-colour:#bac8ff)[[Decline and leave]]</tw-passagedata><tw-passagedata pid="6" name="Walk around to look through the window" tags="" position="350,425" size="100,100">You walk around the church to look through the many windows of the church. A priest spots you and yells at you to (text-colour:#fa5252)[“stay put!” ]
+(text-colour:#bac8ff)[[Decline and leave]]</tw-passagedata><tw-passagedata pid="6" name="Walk around to look through the window" tags="" position="350,425" size="100,100">You, $name1, walk around the church to look through the many windows of the church. A priest spots you and yells at you to (text-colour:#fa5252)[“stay put!” ]
 
 (set:$send to &quot;you to prison where you will have to spend the rest of your life locked up&quot;)
 
-Oh no! He grabs you by the arms and brings you into the church, he states that since he caught you sneeking around, he&#39;s (text-colour:#bac8ff)[[going to...]] </tw-passagedata><tw-passagedata pid="7" name="Help him" tags="" position="950,300" size="100,100">You agree to help the priest on the condition that he will answer any questions that you have. The priest agrees to it, and you get to work on fixing the pew. 
+Oh no! He grabs you by the arms and brings you into the church, he states that since he caught you sneeking around, he&#39;s (text-colour:#bac8ff)[[going to...]] </tw-passagedata><tw-passagedata pid="7" name="Help him" tags="" position="950,300" size="100,100">You agree to help $name2 on the condition that he will answer any questions that you have. $name2 agrees to it, and you get to work on fixing the pew. 
 
-When you have fixed the pew, the priest tells you that you are standing in a Catholic church in time of the Tudors! 
+When you have fixed the pew, the priest, $name2, tells you that you are standing in a Catholic church in time of the Tudors! 
 
-He informs you that the King, Henry VIII has gone //mad in the mind!// The priest, because you helped him, offers you a place to live on the condition that you become a Catholic priest in order to prevent from Protastants from taking over! 
+He informs you that the King, Henry VIII has gone //mad in the mind!// $name2, because you helped him, offers you a place to live on the condition that you become a Catholic priest in order to prevent from Protastants from taking over! 
 
-Do you… 
+Do you, $name1 choose to… 
 
 (text-colour:#bac8ff)[[Agree]]
+or
 (text-colour:#bac8ff)[[Decline]]
 
 &lt;a title=&quot;Joos van Cleve
@@ -66,7 +71,7 @@ Do you…
 
 (set:$die to &quot;the rock you hit your head on is making you bleed out.&quot;)
 
-(after:8s)[Do you want to know (text-colour:#bac8ff)[[more about it?|Paper]] ]</tw-passagedata><tw-passagedata pid="9" name="Agree" tags="" position="1100,300" size="100,100">You agree and become a priest! You have found a home and have made many new friends since being at the church. You have learned how to fix things, how to make bread, and how to spread the word of the lord! 
+(after:8s)[Do you want to know (text-colour:#bac8ff)[[more about it?|Paper]] ]</tw-passagedata><tw-passagedata pid="9" name="Agree" tags="" position="1100,300" size="100,100">You, $name1, agree and become a priest! You have found a home and have made many new friends since being at the church. You have learned how to fix things, how to make bread, and how to spread the word of the lord! 
 
 For doing do so well and for being so kind…
 
@@ -80,7 +85,7 @@ Skip forward to…
 
 (after:4s)[Why would you do that?] 
 
-(after:6s)[The priest was being kind to you]
+(after:6s)[That priest was being kind to you]
 
 (after:8s)[Please learn how to be nicer! ]
 
@@ -90,29 +95,29 @@ Skip forward to…
 
 </tw-passagedata><tw-passagedata pid="11" name="July of 1540!" tags="" position="1250,450" size="100,100">The days are //hot//, and the King has become more crazed as time has gone on! 
 
-The priest that took you in takes you on a trip to London so that you can see the grand churches of the city! When you get there, you notice the stink of the city and the scared looks that the common folk are giving you. 
+$name2, the kind priest that took you, $name1, in takes you on a trip to London so that you can see the grand churches of the city! When you get there, you notice the stink of the city and the scared looks that the common folk are giving you. 
 
-The priest asks if you would like to visit the grandest church in London, St. Etheldreda&#39;s Church!
+$name2 asks if you would like to visit the grandest church in London, St. Etheldreda&#39;s Church!
 
 What option sounds best?
 
 (text-colour:#bac8ff)[[Agree to go]] 
 (text-colour:#bac8ff)[[Decline his offer]]
 
-&lt;a title=&quot;Perferens, CC BY-SA 3.0 &amp;lt;https://creativecommons.org/licenses/by-sa/3.0&amp;gt;, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Church_of_St_Etheldreda_in_Ely,_Cambridgeshire,_UK.JPG&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Church of St Etheldreda in Ely, Cambridgeshire, UK&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Church_of_St_Etheldreda_in_Ely%2C_Cambridgeshire%2C_UK.JPG/512px-Church_of_St_Etheldreda_in_Ely%2C_Cambridgeshire%2C_UK.JPG&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="12" name="Agree to go" tags="" position="1425,450" size="100,100">You agree and follow the priest to the grand church. The church is large, and the windows are taller than you have ever seen before. The chuch is truly a site to look at. It is far more grand than the church back at home!
+&lt;a title=&quot;Perferens, CC BY-SA 3.0 &amp;lt;https://creativecommons.org/licenses/by-sa/3.0&amp;gt;, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Church_of_St_Etheldreda_in_Ely,_Cambridgeshire,_UK.JPG&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Church of St Etheldreda in Ely, Cambridgeshire, UK&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Church_of_St_Etheldreda_in_Ely%2C_Cambridgeshire%2C_UK.JPG/512px-Church_of_St_Etheldreda_in_Ely%2C_Cambridgeshire%2C_UK.JPG&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="12" name="Agree to go" tags="" position="1425,450" size="100,100">You, $name1, agree and follow $name2 to the grand church. The church is large, and the windows are taller than you have ever seen before. The chuch is truly a site to look at. It is far more grand than the church back at home!
 
-The priest introduces you to a friend of his. But the friend does not look happy to see you both… (text-colour:#f03e3e)[he looks scared! ]
+$name2 introduces you to a friend of his. His name is (dropdown:bind $name3, &quot;Timothy&quot;, &quot;Jon&quot;, &quot;Sam&quot;). However, he does not look happy to see you both… (text-colour:#f03e3e)[he looks scared! ]
 
 (text-colour:#bac8ff)[[Ask him why]]
 
 &lt;a title=&quot;Diliff, CC BY-SA 3.0 &amp;lt;https://creativecommons.org/licenses/by-sa/3.0&amp;gt;, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:St_Etheldreda%27s_Church_2,_London,_UK_-_Diliff.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;St Etheldreda&amp;#039;s Church 2, London, UK - Diliff&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/St_Etheldreda%27s_Church_2%2C_London%2C_UK_-_Diliff.jpg/512px-St_Etheldreda%27s_Church_2%2C_London%2C_UK_-_Diliff.jpg&quot;&gt;&lt;/a&gt;
-</tw-passagedata><tw-passagedata pid="13" name="Decline his offer" tags="" position="1100,450" size="100,100">Since you declined, the priest was //very upset//, and so, he left you in the middle of the city… all by yourself! 
+</tw-passagedata><tw-passagedata pid="13" name="Decline his offer" tags="" position="1100,450" size="100,100">Since you, $name1, declined, $name2 was //very upset//, and so, he left you in the middle of the city… all by yourself! 
 
-You soon realize that you have no clue where you are! By looking through the different stores, you are able to buy a map with a couple of coins that your freind gifted you before you left for the city. 
+You soon realize that you have no clue where you are! By looking through the different stores, you are able to buy a map with a couple of coins that your, $name2, gifted you before you left for the city. 
 
 With the map, you are able to (text-colour:#bac8ff)[[find your way back to your friend! |July of 1540!]] Try being neicer and things like that won&#39;t happen!! Next time, you should go with him! It could be really fun!
 
-&lt;a title=&quot;Georg Braun; Frans Hogenberg, Public domain, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Braun_London_UBHD.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Braun London UBHD&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Braun_London_UBHD.jpg/512px-Braun_London_UBHD.jpg&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="14" name="Ask him why" tags="" position="1425,600" size="100,100">The priest of the grand church explains that the king has gone mad… even madder! He tells you that the king has killed the most trusted Thomas Cromwell and is now questioning Catholic priests because of their loyalty to the Pope! 
+&lt;a title=&quot;Georg Braun; Frans Hogenberg, Public domain, via Wikimedia Commons&quot; href=&quot;https://commons.wikimedia.org/wiki/File:Braun_London_UBHD.jpg&quot;&gt;&lt;img width=&quot;512&quot; alt=&quot;Braun London UBHD&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Braun_London_UBHD.jpg/512px-Braun_London_UBHD.jpg&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="14" name="Ask him why" tags="" position="1425,600" size="100,100">$name3, the priest of the grand church explains that the king has gone mad… even madder! He tells you that the king has killed the most trusted Thomas Cromwell and is now questioning Catholic priests because of their loyalty to the Pope! 
 
 (text-colour:#f03e3e)[//You//] are a Catholic priest now… oh no 
 
@@ -120,14 +125,14 @@ Do you…
 
 (text-colour:#bac8ff)[[Ask what to do]] 
 (text-colour:#bac8ff)[[Tell you friend that you two should leave]]
-</tw-passagedata><tw-passagedata pid="15" name="Ask what to do" tags="" position="1275,600" size="100,100">The priest of the grand church states that there is nothing to be done and that all three of your fates are in the hands of God… </tw-passagedata><tw-passagedata pid="16" name="Tell you friend that you two should leave" tags="" position="1600,600" size="100,100">You tell him that you think it would be better to go back home where it is safe, though, before he is able to say anything, the doors of the church are thrown open and several guards of the King come rushing in…
+</tw-passagedata><tw-passagedata pid="15" name="Ask what to do" tags="" position="1275,600" size="100,100">$name3, the priest of the grand church, states that there is nothing to be done and that all three of your fates are in the hands of God… </tw-passagedata><tw-passagedata pid="16" name="Tell you friend that you two should leave" tags="" position="1600,600" size="100,100">You, $name1, tell him that you think it would be better to go back home where it is safe, though, before he is able to say anything, the doors of the church are thrown open and several guards of the King come rushing in…
 
-They take the priest of the grand church… 
+They take $name3 of the grand church… 
 
-Your friend that took you in… 
+Your friend, $name2, that took you in… 
 
 (text-colour:#bac8ff)[[And you…]]
-</tw-passagedata><tw-passagedata pid="17" name="And you…" tags="" position="1600,750" size="100,100">You are standing on a very tall wooden platform, the bag that was placed over your head has been taken off and you can now see the crowd of people that are standing in the streets… watching you. 
+</tw-passagedata><tw-passagedata pid="17" name="And you…" tags="" position="1600,750" size="100,100">You, $name1, are standing on a very tall wooden platform, the bag that was placed over your head has been taken off and you can now see the crowd of people that are standing in the streets… watching you. 
 
 The guard tells you, very loudly, that you are being hung for the crimes of being loyal to a corrupt Pope of the Catholic church. He states that it is by order the King Henry VIII. 
 
@@ -140,9 +145,9 @@ Do you…
 (text-colour:#bac8ff)[[Say nothing and stay loyal to your friend]]
 </tw-passagedata><tw-passagedata pid="18" name="Say that you’re not even Catholic" tags="" position="1425,825" size="100,100">You said that you were not Catholic and the whole crowd of people boo at you! You can&#39;t even stay true to your God in times of struggle? 
 
-(after:4s)[Your friend looks at you with hurt...]
+(after:4s)[$name2 looks at you with hurt...]
 
-(after:6s)[The other priest looks disgusted with you...]
+(after:6s)[$name3 looks disgusted with you...]
 
 (after:8s)[And the crowd boos! ]
 
@@ -150,7 +155,7 @@ Do you…
 
 (set:$loyal to &quot;Catholic&quot;)
 
-(after:12s)[But! before you die, do you want to see what (text-colour:#bac8ff)[[your life]] could have looked like if you were loyal to your freind and had not denied being Catholic? ]</tw-passagedata><tw-passagedata pid="19" name="Say that you’re not a priest and that your friend kidnapped you" tags="" position="1775,825" size="100,100">Your friend, that one that //gave you a home// and a purpose in your forgetful life, //(text-colour:#f03e3e)[spits] //at your shoes and calls you a lying coward… 
+(after:12s)[But! before you die, do you want to see what (text-colour:#bac8ff)[[your life]] could have looked like if you were loyal to your freind and had not denied being Catholic? ]</tw-passagedata><tw-passagedata pid="19" name="Say that you’re not a priest and that your friend kidnapped you" tags="" position="1775,825" size="100,100">Your friend $name2, the one that //gave you a home// and a purpose in your forgetful life, //(text-colour:#f03e3e)[spits] //at your shoes and calls you a lying coward… 
 
 (after:4s)[You have no friends now...]
 
@@ -160,8 +165,8 @@ Do you…
  
 (set:$loyal to &quot;friend&quot;)
  
- (after:10s)[Hold on! You&#39;re still breathing, would you like to see what (text-colour:#bac8ff) [[your life]]  could have looked like if you were loyal to your freind and had not said that you were kidnapped? ]
-</tw-passagedata><tw-passagedata pid="20" name="Say nothing and stay loyal to your friend" tags="" position="1600,925" size="100,100">You choose to say nothing, and instead, you give your friend a nod and a small, sad smile. 
+ (after:10s)[Hold on! You&#39;re still breathing, would you like to see what (text-colour:#bac8ff) [[your life]]  could have looked like if you were loyal to $name2 and had not said that you were kidnapped? ]
+</tw-passagedata><tw-passagedata pid="20" name="Say nothing and stay loyal to your friend" tags="" position="1600,925" size="100,100">You choose to say nothing, and instead, you give your friend, $name2 a nod and a small, sad smile. 
 
 (after:4s)[You were still hung…]
 
@@ -171,9 +176,9 @@ Do you…
 
 (after:16s)[You lived a good, loyal, short life.]
 
-</tw-passagedata><tw-passagedata pid="21" name="your life" tags="" position="1600,1075" size="100,100">If you had been a true and loyal $loyal, you would have died with dignity. Even if you had died, you would have still died with honor from not only your friend and the other priest, but from the crowd as well. You could have moved people. However, you were a (text-colour:#ff6b6b)[coward.] </tw-passagedata><tw-passagedata pid="22" name="Paper" tags="" position="900,675" size="100,100">The paper contains infmoration that sates that there is a religious reform that is currently sweeping across the nation! Catholics are being killed left and right and the Protestans are taking over the nation each day! 
+</tw-passagedata><tw-passagedata pid="21" name="your life" tags="" position="1600,1075" size="100,100">If you had been a true and loyal $loyal, you would have died with dignity. Even if you had died, you would have still died with honor from not only $name2 and $name3, but from the crowd as well. You could have moved people. However, you were a (text-colour:#ff6b6b)[coward.] </tw-passagedata><tw-passagedata pid="22" name="Paper" tags="" position="900,675" size="100,100">The paper contains infmoration that sates that there is a religious reform that is currently sweeping across the nation! Catholics are being killed left and right and the Protestans are taking over the nation each day! 
 
-(after:8s)[How could you leave that poor old priest alone? ]
+(after:8s)[How could you leave that poor old priest back at the church alone? ]
 
 (after:10s)[What if he was Catholic? ]
 
@@ -181,7 +186,7 @@ Do you…
 
 (after:14s)[Well, I guess you&#39;ll never know since you are about to die beacuse (text-colour:#ff6b6b)[$die]]
 
-(after:16s)[Dang, what a short life. At least you leanred something new!]</tw-passagedata><tw-passagedata pid="23" name="Go around to see if anyone is in the back" tags="" position="525,525" size="100,100">You walk along the back of the church to see if anyone is there. However, when you get to the back of the church, you notice that a man dressed in robes is pointing at you through the open back door of the church! (text-colour:#ff6b6b)[He shouts at you to follow] him. And, sadly, you have no other choice... oh man! 
+(after:16s)[Dang, what a short life. At least you leanred something new!]</tw-passagedata><tw-passagedata pid="23" name="Go around to see if anyone is in the back" tags="" position="525,525" size="100,100">You, $name1, walk along the back of the church to see if anyone is there. However, when you get to the back of the church, you notice that a man dressed in robes is pointing at you through the open back door of the church! (text-colour:#ff6b6b)[He shouts at you to follow] him. And, sadly, you have no other choice... oh man! 
 
 (set:$send to &quot; you to a farm where you will have to live the rest of your life cleaning out pig stalls!&quot;)
 
@@ -189,7 +194,15 @@ Sicne he thinks that you are a criminal, he states that he is (text-colour:#bac8
 
 (after:4s)[All for sneaking? ]
 
-(after:6s)[What a short, boring, life to live...]</tw-passagedata></tw-storydata>
+(after:6s)[What a short, boring, life to live...]</tw-passagedata><tw-passagedata pid="25" name="They have a name!" tags="" position="400,200" size="100,100">As time goes on, you begin to hear movement in the trees... you then see big yellow eyes staring at you! 
+
+(after:8s)[When you look around, you notice a pack of wolves surounding you... $pup is not a dog... they are a baby wolf. And now their wolf pack thinks that you stole their baby! ]
+
+(after:12s)[The mother wolf of $pup eats you and you (text-colour:#f03e3e)[die]... ]
+
+(after:17s)[What a sad life you lived...]</tw-passagedata><tw-passagedata pid="26" name="The thives then..." tags="" position="775,200" size="100,100">The thieves after hearing your name, laugh! They state that $fake1 is not a real name and that you, $name1, are lying to them. 
+
+They take your clothes and leave you for (text-colour:#f03e3e)[dead! ]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
